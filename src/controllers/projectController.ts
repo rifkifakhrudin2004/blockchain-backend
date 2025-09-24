@@ -4,7 +4,7 @@ import { ProjectService } from '../services/ProjectService';
 interface AuthRequest extends Request {
   user?: any;
 }
-
+// Controller for project-related endpoints
 export class ProjectController {
   private projectService: ProjectService;
 

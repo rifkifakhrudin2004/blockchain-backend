@@ -1,0 +1,982 @@
+[2025-09-17T04:55:13.925Z] ERROR: Failed to connect to database
+{
+  "error": {
+    "message": "",
+    "code": "ECONNREFUSED"
+  }
+}
+
+[2025-09-17T07:29:40.013Z] ERROR: Application Error
+{
+  "errorId": "85lddsgnigv",
+  "error": {
+    "message": "Expected double-quoted property name in JSON at position 65 (line 4 column 1)",
+    "stack": "SyntaxError: Expected double-quoted property name in JSON at position 65 (line 4 column 1)\n    at JSON.parse (<anonymous>)\n    at parse (D:\\Magang ARM Solusi\\Desentralisasi\\blockchain-backend\\node_modules\\body-parser\\lib\\types\\json.js:77:19)\n    at D:\\Magang ARM Solusi\\Desentralisasi\\blockchain-backend\\node_modules\\body-parser\\lib\\read.js:123:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (D:\\Magang ARM Solusi\\Desentralisasi\\blockchain-backend\\node_modules\\raw-body\\index.js:238:16)\n    at done (D:\\Magang ARM Solusi\\Desentralisasi\\blockchain-backend\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (D:\\Magang ARM Solusi\\Desentralisasi\\blockchain-backend\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1698:12)",
+    "name": "SyntaxError"
+  },
+  "request": {
+    "method": "POST",
+    "url": "/api/auth/login",
+    "headers": {
+      "content-type": "application/json",
+      "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VyIiwiZW1haWwiOiJ1c2VyQGdtYWlsLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MDkzNjEyLCJleHAiOjE3NTg2OTg0MTJ9.CFDL_jLHVzcIwP2ZcogwL4JsR1SQdyiw6vZKJ4hbqgY",
+      "user-agent": "PostmanRuntime/7.46.0",
+      "accept": "*/*",
+      "postman-token": "fc5ccda1-76aa-47cd-b4f2-2fdb2b31b3fc",
+      "host": "localhost:3000",
+      "accept-encoding": "gzip, deflate, br",
+      "connection": "keep-alive",
+      "content-length": "66"
+    },
+    "params": {},
+    "query": {}
+  },
+  "timestamp": "2025-09-17T07:29:40.013Z"
+}
+
+[2025-09-18T07:52:42.208Z] ERROR: Port 3000 is already in use
+
+[2025-09-19T01:26:43.372Z] ERROR: Failed to connect to database
+{
+  "error": {
+    "message": "",
+    "code": "ECONNREFUSED"
+  }
+}
+
+[2025-09-19T03:30:01.387Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:30:01.523Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:30:16.977Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:30:35.288Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:30:35.304Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:32:00.385Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:32:00.402Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:32:10.508Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:32:34.323Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:32:34.343Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:38:08.641Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:38:27.178Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:53:29.179Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:53:29.207Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:53:35.575Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:53:35.593Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:55:52.501Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T03:55:52.513Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:05:18.618Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:05:18.633Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:27:30.746Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:27:30.774Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:27:32.281Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:29:02.673Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:29:02.745Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:34:30.318Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:34:30.341Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:35:30.792Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:35:30.806Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:35:56.203Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T04:35:56.224Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T06:37:53.134Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T06:37:53.157Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T06:54:04.306Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T06:54:04.360Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T07:31:31.725Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T07:31:31.756Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T07:31:31.768Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T07:32:02.368Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T07:32:02.379Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T07:32:24.353Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T08:21:41.874Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T08:21:41.988Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T08:22:38.875Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-19T08:22:38.893Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T02:12:13.896Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T02:12:13.941Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T02:49:51.349Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T02:49:51.384Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T02:52:57.655Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T02:52:57.680Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T03:03:30.958Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T03:03:31.202Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T03:07:20.796Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T03:07:20.811Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T03:22:42.844Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T03:22:42.872Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:00:42.060Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:00:42.140Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:12:08.378Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:12:08.394Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:25:44.415Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:25:44.438Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:29:11.389Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:29:11.404Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:41:08.181Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T04:41:08.196Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T05:50:13.344Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T05:50:13.361Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T05:50:18.683Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T06:22:12.241Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T06:22:12.264Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T06:29:24.835Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T06:29:24.857Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T06:33:11.952Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T06:33:11.973Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T07:56:00.929Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
+[2025-09-23T07:56:00.966Z] ERROR: Error getting all transactions for admin
+{
+  "error": {
+    "message": "Incorrect arguments to mysqld_stmt_execute",
+    "code": "ER_WRONG_ARGUMENTS",
+    "errno": 1210,
+    "sql": "SELECT \n          t.*,\n          p.name as project_name,\n          fu.username as from_username, fu.email as from_email,\n          tu.username as to_username, tu.email as to_email\n         FROM transactions t\n         JOIN projects p ON t.project_id = p.project_id\n         LEFT JOIN users fu ON t.from_user_id = fu.id\n         LEFT JOIN users tu ON t.to_user_id = tu.id\n         \n         ORDER BY t.created_at DESC\n         LIMIT ? OFFSET ?",
+    "sqlState": "HY000",
+    "sqlMessage": "Incorrect arguments to mysqld_stmt_execute"
+  }
+}
+
